@@ -13,6 +13,7 @@
       line-height: 1.6;
     }
 
+    /* Barra de navegação */
     nav {
       background: linear-gradient(90deg, #ffb6b9, #fcd5ce, #f9dcc4, #fec89a, #fcd5ce, #ffb6b9);
       padding: 20px 40px;
@@ -39,6 +40,7 @@
       color: #fff3e0;
     }
 
+    /* Cabeçalho */
     header {
       background: linear-gradient(120deg, #f8ede3, #f7d9c4, #e7bfa4);
       color: #333;
@@ -71,20 +73,54 @@
       color: #b08968;
     }
 
-    .historia, .cerimonia, .galeria, .mensagem, .confirmacao, .presentear {
+    /* Nossa História */
+    .historia {
+      background: #fff;
       padding: 60px 20px;
       text-align: center;
-    }
-
-    .historia, .cerimonia, .galeria {
-      background: #fff;
       max-width: 900px;
       margin: 0 auto;
     }
 
-    .historia h2, .cerimonia h2, .galeria h2, .mensagem h2, .confirmacao h2, .presentear h2 {
+    .historia h2 {
       font-size: 2em;
       margin-bottom: 20px;
+      color: #6d4c41;
+    }
+
+    .historia p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    /* Cerimônia */
+    .cerimonia {
+      background: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .cerimonia h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #6d4c41;
+    }
+
+    .cerimonia p {
+      margin: 5px 0;
+      font-size: 1.1em;
+    }
+
+    /* Galeria */
+    .galeria {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .galeria h2 {
+      margin-bottom: 30px;
+      font-size: 2em;
       color: #6d4c41;
     }
 
@@ -96,11 +132,25 @@
       margin: 0 auto;
     }
 
-    .fotos img {
+    .foto img {
       width: 100%;
+      height: 100%;
       object-fit: cover;
       border-radius: 15px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      display: block;
+    }
+
+    /* Mensagem */
+    .mensagem {
+      background: #fff8e1;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .mensagem h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #6d4c41;
     }
 
     form {
@@ -112,7 +162,7 @@
       text-align: left;
     }
 
-    input, textarea {
+    input, textarea, select {
       width: 100%;
       padding: 12px;
       border: 1px solid #ccc;
@@ -138,8 +188,31 @@
       background: #8d6e63;
     }
 
+    /* Confirmar Presença */
+    .confirmar {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .confirmar h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #6d4c41;
+    }
+
+    /* Presentear */
     .presentear {
       background: #f1ede9;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .presentear h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #6d4c41;
     }
 
     .pix-box {
@@ -170,6 +243,7 @@
       background: #4e342e;
     }
 
+    /* Rodapé */
     footer {
       background: #333;
       color: white;
@@ -186,16 +260,18 @@
 </head>
 <body>
 
+  <!-- Barra de navegação -->
   <nav>
     <a href="#inicio">Início</a>
     <a href="#historia">Nossa História</a>
     <a href="#cerimonia">Cerimônia</a>
     <a href="#galeria">Galeria</a>
     <a href="#mensagem">Mensagem</a>
-    <a href="#confirmacao">Confirmação</a>
+    <a href="#confirmar">Confirmar Presença</a>
     <a href="#presentear">Presentear</a>
   </nav>
 
+  <!-- Cabeçalho -->
   <header id="inicio">
     <h1>Douglas & Isabelly</h1>
     <p>18 de Outubro de 2025</p>
@@ -203,6 +279,7 @@
     <div class="aliancas">💍💍</div>
   </header>
 
+  <!-- Nossa História -->
   <section class="historia" id="historia">
     <h2>Nossa História</h2>
     <p>Deus uniu nossas vidas de forma perfeita, e desde então temos caminhado juntos em amor, fé e cumplicidade.</p>
@@ -210,18 +287,29 @@
     <p>Agora, com muita alegria, convidamos você a fazer parte do início da nossa nova família.</p>
   </section>
 
+  <!-- Cerimônia -->
   <section class="cerimonia" id="cerimonia">
     <h2>Cerimônia Religiosa</h2>
     <p>📍 Chácara - Rua Walter Pigozzo, nº16, Cambé</p>
     <p>⏰ Horário: 12:00</p>
   </section>
 
+  <!-- Galeria -->
   <section class="galeria" id="galeria">
     <h2>Galeria de Fotos</h2>
     <div class="fotos">
-      <img src="https://i.postimg.cc/4Nk7sKrL/IMG-20250406-WA0001.jpg" alt="Foto 1">
-      <img src="https://i.postimg.cc/VLqS6fwY/IMG-20250406-WA0003.jpg" alt="Foto 2">
-      <img src="https://i.postimg.cc/52fXQh98/IMG-20250501-205635.jpg" alt="Foto 3">
+      <div class="foto">
+        <img src="https://i.postimg.cc/SNVwCSfp/IMG-20250501-205635.jpg" alt="Douglas e Isabelly">
+      </div>
+      <div class="foto">
+        <img src="https://i.postimg.cc/XqpwXMJJ/IMG-20250406-WA0003.jpg" alt="Douglas e Isabelly">
+      </div>
+      <div class="foto">
+        <img src="https://i.postimg.cc/NMN6gGQS/IMG-20241231-220643.jpg" alt="Douglas e Isabelly">
+      </div>
+      <div class="foto">
+        <img src="https://i.postimg.cc/KzV1q1GG/IMG-20250825-WA0021.jpg" alt="Douglas e Isabelly">
+      </div>
     </div>
   </section>
 
@@ -235,18 +323,22 @@
     </form>
   </section>
 
-  <!-- Confirmação -->
-  <section class="confirmacao" id="confirmacao">
-    <h2>Confirme sua presença ✅</h2>
-    <p>As informações enviadas serão encaminhadas diretamente para o e-mail do casal.</p>
+  <!-- Confirmar Presença -->
+  <section class="confirmar" id="confirmar">
+    <h2>Confirme sua presença ✨</h2>
     <form action="mailto:douglaseisabelly2025@gmail.com" method="POST" enctype="text/plain">
       <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="number" name="quantidade" placeholder="Quantidade de convidados" required>
-      <textarea name="mensagem" rows="5" placeholder="Mensagem opcional..."></textarea>
-      <button type="submit">Confirmar Presença</button>
+      <input type="number" name="acompanhantes" placeholder="Quantidade de acompanhantes" min="0" required>
+      <select name="confirmacao" required>
+        <option value="">Selecione uma opção</option>
+        <option value="sim">Sim, estarei presente</option>
+        <option value="nao">Infelizmente não poderei ir</option>
+      </select>
+      <button type="submit">Enviar Confirmação</button>
     </form>
   </section>
 
+  <!-- Presentear -->
   <section class="presentear" id="presentear">
     <h2>Presentear o casal para a lua de mel</h2>
     <div class="pix-box">
@@ -255,6 +347,7 @@
     </div>
   </section>
 
+  <!-- Rodapé -->
   <footer>
     <p>"Assim, já não são dois, mas uma só carne. Portanto, o que Deus uniu, ninguém o separe." (Mateus 19:6)</p>
     <p>"Acima de tudo, revistam-se do amor, que é o elo perfeito." (Colossenses 3:14)</p>
@@ -270,4 +363,4 @@
   </script>
 
 </body>
-    </html>
+</html>
