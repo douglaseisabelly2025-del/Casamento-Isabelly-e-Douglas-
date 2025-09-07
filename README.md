@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casamento Douglas & Isabelly</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      background: #faf9f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: linear-gradient(90deg, #ffb6b9, #fcd5ce, #f9dcc4, #fec89a, #fcd5ce, #ffb6b9);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+    nav a:hover {
+      color: #fff3e0;
+    }
+
+    header {
+      background: linear-gradient(120deg, #f8ede3, #f7d9c4, #e7bfa4);
+      color: #333;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      font-family: "Great Vibes", cursive;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .subtitulo {
+      font-size: 1.5em;
+      margin-top: 15px;
+      font-style: italic;
+      color: #6d4c41;
+    }
+    .aliancas {
+      font-size: 3em;
+      margin-top: 20px;
+      color: #b08968;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #6d4c41;
+    }
+    section p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    .cerimonia iframe {
+      border: 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      width: 100%;
+      height: 350px;
+    }
+
+    .fotos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+    .fotos img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+      font-family: inherit;
+    }
+    button {
+      background: #b08968;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      color: white;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      align-self: center;
+    }
+    button:hover {
+      background: #8d6e63;
+    }
+
+    .pix-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .pix-key {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .pix-button {
+      background: #6d4c41;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .pix-button:hover {
+      background: #4e342e;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1em;
+    }
+    footer p {
+      margin: 10px 0;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#historia">Nossa História</a>
+    <a href="#cerimonia">Cerimônia</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#mensagem">Mensagem</a>
+    <a href="#confirmar">Confirmação</a>
+    <a href="#presentear">Presentear</a>
+  </nav>
+
+  <header id="inicio">
+    <h1>Douglas & Isabelly</h1>
+    <p>18 de Outubro de 2025</p>
+    <p class="subtitulo">O casamento mais esperado de 2025</p>
+    <div class="aliancas">💍💍</div>
+  </header>
+
+  <section id="historia">
+    <h2>Nossa História</h2>
+    <p>Nossa caminhada começou <em>fora da igreja</em>, mas logo fomos alcançados pela presença de Deus. Ele transformou nossa visão, alinhou nossos propósitos e fortaleceu nossa aliança.</p>
+    <p>Em oração e fé, não demos brechas para o inimigo e seguimos firmes no caminho que o Senhor preparou para nós.</p>
+    <p>Este casamento é um testemunho vivo do amor de Cristo em nossa história — um presente de Deus que desejamos compartilhar com você.</p>
+  </section>
+
+  <section class="cerimonia" id="cerimonia">
+    <h2>Cerimônia Religiosa</h2>
+    <p>📍 Chácara - Rua Walter Pigozzo, nº16, Cambé</p>
+    <p>⏰ Horário: 12:00</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.218027764876!2d-51.293021!3d-23.287410!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb43196c95d1c5%3A0x1e92f6b1b4e8f48d!2sRua%20Walter%20Pigozzo%2C%2016%20-%20Camb%C3%A9%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1693934812345!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="galeria" id="galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="fotos">
+      <img src="https://i.postimg.cc/4Nk7sKrL/IMG-20250406-WA0001.jpg" alt="Foto 1">
+      <img src="https://i.postimg.cc/VLqS6fwY/IMG-20250406-WA0003.jpg" alt="Foto 2">
+      <img src="https://i.postimg.cc/52fXQh98/IMG-20250501-205635.jpg" alt="Foto 3">
+    </div>
+  </section>
+
+  <section id="mensagem">
+    <h2>Mande uma mensagem para o casal 💌</h2>
+    <p>As informações enviadas serão encaminhadas diretamente para o e-mail do casal.</p>
+    <form action="mailto:douglaseisabelly2025@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <section id="confirmar">
+    <h2>Confirmação de Presença ✅</h2>
+    <p>Por favor, confirme sua presença para que possamos organizar este momento especial com todo carinho.</p>
+    <form action="mailto:douglaseisabelly2025@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="number" name="acompanhantes" placeholder="Número de acompanhantes" min="0" required>
+      <select name="presenca" required>
+        <option value="">Selecione</option>
+        <option value="Sim">Sim, estarei presente</option>
+        <option value="Nao">Não poderei comparecer</option>
+      </select>
+      <button type="submit">Confirmar Presença</button>
+    </form>
+  </section>
+
+  <section id="presentear">
+    <h2>Presentear o casal para a lua de mel</h2>
+    <div class="pix-box">
+      <div class="pix-key">PIX: 43984998960 - Douglas Silva Vieira</div>
+      <button class="pix-button" onclick="copiarPix()">Copiar chave PIX</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>"Assim, já não são dois, mas uma só carne. Portanto, o que Deus uniu, ninguém o separe." (Mateus 19:6)</p>
+    <p>"Acima de tudo, revistam-se do amor, que é o elo perfeito." (Colossenses 3:14)</p>
+  </footer>
+
+  <script>
+    function copiarPix() {
+      const chavePix = "43984998960";
+      navigator.clipboard.writeText(chavePix).then(() => {
+        alert("Chave PIX copiada com sucesso!");
+      });
+    }
+  </script>
+
+</body>
+</html>
